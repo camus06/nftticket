@@ -6,10 +6,8 @@ On-chain event tickets on Stellar. Organisers create events with a ticket price 
 
 | | |
 |---|---|
-| **Frontend** | `https://nfticket.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/nfticket` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Frontend** | `https://nfticket-mu.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBALEEGPQOR3UOIUUQPH6DEGYDHDEHCHQS3LGXXWN4WLYQMMIG2BQ7HC` |
 
 ## How It Works
 
