@@ -6,8 +6,8 @@ On-chain event tickets on Stellar. Organisers create events with a ticket price 
 
 | | |
 |---|---|
-| **Frontend** | `https://nfticket-mu.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBALEEGPQOR3UOIUUQPH6DEGYDHDEHCHQS3LGXXWN4WLYQMMIG2BQ7HC` |
+| **Frontend** | `https://nfticket-app.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CDUELE24ZRRBZQU6M4UKQ7HDYNL5IHXYCRFGVN5LBLUHCIENOQE5SORI` |
 
 ## How It Works
 
@@ -17,6 +17,16 @@ On-chain event tickets on Stellar. Organisers create events with a ticket price 
 4. **At the door** organiser calls `validate_ticket(id)` — status flips to `Used`
 5. Used tickets cannot be transferred or validated again
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -48,3 +58,5 @@ ticket_count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
